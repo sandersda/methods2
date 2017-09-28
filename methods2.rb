@@ -16,8 +16,24 @@
 
 
 # TODO - write elevenish?
+def elevenish?(n)
+	if n % 11 == 0
+		return true
+	end
+	return false
+end
 	
 # TODO - write ice_cream_party?
+def ice_cream_party(ice_cream, candy)
+	if ice_cream and candy < 5
+		return 0
+	end
+
+	if ice_cream >= (candy * 2) or candy >= (ice_cream * 2)
+		return 2
+	end
+	return 1
+end
 
 # TODO - write successful_squirrel_party?
 
