@@ -28,4 +28,7 @@ describe 'Methods2' do
 			ice_cream_party(7,17).must_equal(2)
 		end
 	end
+
+
+	describe 'successful_squirrel_party'
 end
