@@ -30,5 +30,20 @@ describe 'Methods2' do
 	end
 
 
-	describe 'successful_squirrel_party'
+	describe 'successful_squirrel_party' do
+		it 'should return true if the party is on a weekday and has between 40 and 60 nuts' do
+			successful_squirrel_party(50, false).must_equal(true)
+		end
+
+		it 'should return false if the party is on a weekday and had too many nuts' do
+			successful_squirrel_party(70, false).must_equal(false)
+		end
+
+		it 'should return true if the party is on a weekend and the nuts are greater than 40' do
+			successful_squirrel_party(1234567890, true).must_equal(true)
+		end
+	end
+
+
 end
+
