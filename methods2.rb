@@ -53,11 +53,31 @@ end
 
 # TODO - write ticket
 
-def write_ticket()
+def ticket(a, b, c)
+	if a + b == 10 or b + c == 10 or a + c == 10
+		return 10
+	elsif a + b == (b + c + 10) or a + b == (c + a + 10)
+		return 5
+	end
+	return 0
+end
 # TODO - write in_order?
+def in_order(a, b, c, bOK)
+	if bOK == true and c > b
+		return true
+	elsif a < b and b < c
+		return true
+	end
+	return false
+end
 
 # TODO - write less_by_ten?
-
+def less_by_ten(a, b, c)
+	if a =< (b - 10) and a =< (c - 10) or b =< (a - 10) and b =< (c - 10) or c <= (a - 10) and c <= (b - 10)
+		return true
+	end
+	return false
+end
 # TODO - write fizz_string
 
 # TODO - write first_last_six?

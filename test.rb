@@ -45,5 +45,10 @@ describe 'Methods2' do
 	end
 
 
+	describe 'write_ticket' do
+		it 'should '
+
+	end
+
 end
 
