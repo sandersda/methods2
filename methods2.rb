@@ -101,5 +101,7 @@ def first_last_six(list)
 end
 
 # TODO - write rotate_left
+def rotate_left(trio)
 
+end
 # TODO - write double23?
