@@ -79,10 +79,26 @@ def less_by_ten(a, b, c)
 	return false
 end
 # TODO - write fizz_string
-def fizz_string()
-
+def fizz_string(str)
+	if str[0].downcase == "f" and str[str.length - 1].downcase == "b"
+		return "FizzBuzz"
+	end
+	if str[0].downcase == "f"
+		return "Fizz"
+	end
+	if str[str.length - 1] == "b"
+		return "Buzz"
+	end
 end
 # TODO - write first_last_six?
+def first_last_six(list)
+	first_number = list[0]
+	last_number = list[list.length - 1]
+	if first_number == 6 or last_number == 6:
+		return true
+	end
+	return false
+end
 
 # TODO - write rotate_left
 
