@@ -79,7 +79,9 @@ def less_by_ten(a, b, c)
 	return false
 end
 # TODO - write fizz_string
+def fizz_string()
 
+end
 # TODO - write first_last_six?
 
 # TODO - write rotate_left
