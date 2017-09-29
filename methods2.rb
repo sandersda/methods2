@@ -65,13 +65,14 @@ end
 def in_order(a, b, c, bOK)
 	if bOK == true and c > b
 		return true
-	elsif a < b and b < c
+	elsif a < b and b < c and c > a
 		return true
 	end
 	return false
 end
 
 # TODO - write less_by_ten?
+
 def less_by_ten(a, b, c)
 	if a <= (b - 10) and a <= (c - 10) or b <= (a - 10) and b <= (c - 10) or c <= (a - 10) and c <= (b - 10)
 		return true
@@ -79,6 +80,7 @@ def less_by_ten(a, b, c)
 	return false
 end
 # TODO - write fizz_string
+
 def fizz_string(str)
 	if str[0].downcase == "f" and str[str.length - 1].downcase == "b"
 		return "FizzBuzz"
@@ -91,6 +93,7 @@ def fizz_string(str)
 	end
 end
 # TODO - write first_last_six?
+
 def first_last_six(list)
 	first_number = list[0]
 	last_number = list[list.length - 1]
@@ -101,6 +104,7 @@ def first_last_six(list)
 end
 
 # TODO - write rotate_left
+
 def rotate_left(trio)
 	first_number = trio[0]
 	new_trio = [0,0,0]
@@ -110,6 +114,7 @@ def rotate_left(trio)
 	return new_trio
 end
 # TODO - write double23?
+
 def double23(list)
 	twos = 0
 	threes = 0
@@ -125,4 +130,7 @@ def double23(list)
 		return true
 	end
 	if threes == 2
-		return 
+		return true
+	end
+	return false
+end
