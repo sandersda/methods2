@@ -70,7 +70,7 @@ describe 'Methods2' do
 
 	describe 'less_by_ten' do
 		it 'should determine if one of the numbers is atleast ten less than the others' do
-			less_by_ten(1,12345678,12345678).must_equal(true)
+			less_by_ten(1,12,12).must_equal(true)
 		end
 	end
 
@@ -103,6 +103,14 @@ describe 'Methods2' do
 	describe 'double23' do
 		it 'checks to see if there are two twos or two threes in a list of numbers' do
 			double23([1,2124,23145,2315,2,2,5678,67]).must_equal(true)
+		end
+
+		it 'checks to see if there more than two twos and two threes in the list' do
+			double23([2,2,2,2,2,2,3,3,3,3,3,3]).must_equal(false)
+		end
+
+		it 'still functions even if there are less than two total numbers in the list' do
+			double23([2]).must_equal(false)
 		end
 	end
 end
