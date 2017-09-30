@@ -74,6 +74,30 @@ describe 'Methods2' do
 		end
 	end
 
-	describe ''
+	describe 'fizz_string' do
+		it 'should figure out if the first character is an f and the last character is a b and say "FizzBuzz"' do
+			fizz_string('Fab').must_equal('FizzBuzz')
+		end
+
+		it 'should figure out if the first character is an f and the last character is not a b and say "Fizz"' do
+			fizz_string('Futball de Americano').must_equal('Fizz')
+		end
+
+		it 'should figure out if the first character is not an f and the last character is a b and say "Buzz"' do
+			fizz_string('David Sanders is superB').must_equal('Buzz')
+		end
+	end
+
+	describe 'first_last_six' do
+		it 'should determine if either the first number or the last number is a six' do
+			first_last_six([1,2,2,3,44451561243,6]).must_equal(true)
+		end
+	end
+
+	describe 'rotate_left' do
+		it 'takes the original trio of numbers and rotates them all one position to the left' do
+			rotate_left([1,2,3]).must_equal([2,3,1])
+		end
+	end
 end
 
