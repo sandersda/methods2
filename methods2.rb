@@ -91,6 +91,7 @@ def fizz_string(str)
 	if str[str.length - 1] == "b"
 		return "Buzz"
 	end
+	return str
 end
 # TODO - write first_last_six?
 

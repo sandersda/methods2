@@ -99,5 +99,11 @@ describe 'Methods2' do
 			rotate_left([1,2,3]).must_equal([2,3,1])
 		end
 	end
+
+	describe 'double23' do
+		it 'checks to see if there are two twos or two threes in a list of numbers' do
+			double23([1,2124,23145,2315,2,2,5678,67]).must_equal(true)
+		end
+	end
 end
 
