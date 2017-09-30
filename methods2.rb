@@ -74,7 +74,11 @@ end
 # TODO - write less_by_ten?
 
 def less_by_ten(a, b, c)
-	if a <= (b - 10) and a <= (c - 10) or b <= (a - 10) and b <= (c - 10) or c <= (a - 10) and c <= (b - 10)
+	if a <= (b - 10) and a <= (c - 10)
+		return true
+	elsif b <= (a - 10) and b <= (c - 10)
+		return true
+	elsif c <= (a - 10) and c <= (b - 10)
 		return true
 	end
 	return false
@@ -88,7 +92,7 @@ def fizz_string(str)
 	if str[0].downcase == "f"
 		return "Fizz"
 	end
-	if str[str.length - 1] == "b"
+	if str[str.length - 1].downcase == "b"
 		return "Buzz"
 	end
 	return str
